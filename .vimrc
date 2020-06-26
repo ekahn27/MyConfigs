@@ -9,9 +9,6 @@ function! Ap(isOn)
 		inoremap [ []<esc>i
 		inoremap { {<CR>}<esc>O
 	elseif(a:isOn == 0)
-		"inoremap ( (
-		"inoremap [ [
-		"inoremap { {
 		iunmap (
 		iunmap [
 		iunmap {
