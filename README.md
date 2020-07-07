@@ -1,4 +1,5 @@
-##My Vim Configurations
+## My Vim Configurations
+
 This contains my vimrc file which has all of my vim settings, making it easy to
 set up my workspace on other computers.
 
