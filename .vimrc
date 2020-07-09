@@ -27,8 +27,9 @@ syntax on			"enables syntax highlighting
 set cursorline		"Shows current line cursor is on
 nnoremap j gj
 nnoremap k gk
-set wildmode
+"nice autocomplete for ":" commands
 set wildmenu
+set wildmode=list:longest,list:full
 set ignorecase		"ignore case when searching
 set smartcase		"override 'ignorecase' if search contains capital letter
 
