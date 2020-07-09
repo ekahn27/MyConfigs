@@ -23,14 +23,14 @@ inoremap /* <esc>:set backspace=indent,start<CR>i/*<CR><BS>*/<esc>:set backspace
 
 "move over one space (move outside parens)
 imap <leader>a <esc>la
-syntax on	"enables syntax highlighting
-"Shows current line cursor is on
-set cursorline
+syntax on			"enables syntax highlighting
+set cursorline		"Shows current line cursor is on
 nnoremap j gj
 nnoremap k gk
+set wildmode
 set wildmenu
-set ignorecase
-set smartcase
+set ignorecase		"ignore case when searching
+set smartcase		"override 'ignorecase' if search contains capital letter
 
 "makes cursor block when not in insert mode
 "even solid, odd blink
@@ -41,9 +41,9 @@ let &t_EI.="\e[2 q" "EI= Normal mode (else)
 let &t_te.="\e[1 q"
 "SR is replace mode
 
-set number		"line numbers
+set number			"line numbers
 set showmode        "show mode currently editing in
-set title       "show filename in window title bar
+set title			"show filename in window title bar
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 "Can use w/ gq to wrap text really nicely
@@ -53,22 +53,21 @@ filetype indent on
 set autoindent      "indent if already indented
 "set smartindent     "smart indenting, ex: for loop
 set tabstop=4       "num visual spaces per tab
-set smarttab
+set smarttab		"<Tab> in front of a line inserts blanks according to 'shiftwidth'
 set softtabstop=4   "num spaces in tab when editing
 set shiftwidth=4    "make tab 4 spaces
 set noexpandtab		"don't use spaces for tabs
-"set expandtab       "use spaces when tab hit
 "configure tabs for various files
-au BufReadPost,BufNewFile *.py setlocal expandtab
+au BufReadPost,BufNewFile *.py setlocal expandtab "use spaces when tab is hit
 au BufReadPost,BufNewFile *.c,*.h setlocal cindent
 
-set ruler       "always show cursor
+set ruler			"always show cursor
 set scrolloff=5     "start scrolling before hitting top/bottom
 set showmatch       "show matching parens
 set incsearch       "search chars as entered
 set hlsearch        "highlight matches
 
-set noswapfile
+set noswapfile		"no additional swapfiles
 set colorcolumn=80  "highlight column 80 for long lines
 
 colorscheme gruvbox
