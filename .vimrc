@@ -2,7 +2,6 @@
 imap jj <esc>
 
 let mapleader="'"
-
 function! Ap(isOn)
 	if(a:isOn == 1)
 		inoremap ( ()<esc>i
@@ -29,7 +28,6 @@ nnoremap j gj
 nnoremap k gk
 "nice autocomplete for ":" commands
 set wildmenu
-set wildmode=list:longest,list:full
 set ignorecase		"ignore case when searching
 set smartcase		"override 'ignorecase' if search contains capital letter
 
@@ -47,8 +45,7 @@ set showmode        "show mode currently editing in
 set title			"show filename in window title bar
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-"Can use w/ gq to wrap text really nicely
-set textwidth=80
+set textwidth=80	"Can use w/ gq to wrap text really nicely
 
 filetype indent on
 set autoindent      "indent if already indented
@@ -78,3 +75,9 @@ set t_ut=
 
 "stuff I"m trying out
 set completeopt=longest,menuone "autocomplete
+
+"persistent undo
+set undodir=$HOME/.vim/undo	"where to save undo histories
+set undofile				"saves undos after file closes
+set undolevels=1000			"How many undos
+set undoreload=10000		"number of lines to save for undo
