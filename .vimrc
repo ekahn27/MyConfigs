@@ -1,3 +1,4 @@
+set nocompatible	"Use vim settings instead of vi
 "Easy escape to normal mode
 imap jj <esc>
 
@@ -82,7 +83,26 @@ set undofile				"saves undos after file closes
 set undolevels=1000			"How many undos
 set undoreload=10000		"number of lines to save for undo
 
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-h> <C-w>h
-map <C-l> <C-w>l
+"easy switching between windows
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+
+set pastetoggle=<F2>
+set ttyfast
+
+"simply to stop security flaw
+set nomodeline
+
+"Helpful tips
+"gq <motion> to wrap text
+"use <%> to jump to matching paren
+"Sessions help if you have multiple files open and need to close vim, but want to
+"return to your current windows later in vim.
+"
+"To create a session<br>
+":mks ~/.vim/sessions/<session_name>.vim
+"
+"To restore session<br>
+":source ~/.vim/sessionss/<session_name>.vim
