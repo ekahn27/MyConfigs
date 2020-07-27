@@ -36,8 +36,8 @@ set smartcase		"override 'ignorecase' if search contains capital letter
 "even solid, odd blink
 "0-2 block, 3-4 underscore, 5-6 vertical bar
 let &t_ti.="\e[1 q"
-let &t_SI.="\e[5 q" "SI= Insert mode
-let &t_EI.="\e[2 q" "EI= Normal mode (else)
+let &t_SI.="\e[5 q" "SI= Entering Insert mode
+let &t_EI.="\e[2 q" "EI= Leaving Insert mode
 let &t_te.="\e[1 q"
 "SR is replace mode
 
@@ -106,3 +106,7 @@ set nomodeline
 "
 "To restore session<br>
 ":source ~/.vim/sessionss/<session_name>.vim
+"
+"gv - selects previous visual
+"
+"m{letter}, '{letter} - sets mark at cursor, returns to mark
