@@ -110,3 +110,5 @@ set nomodeline
 "gv - selects previous visual
 "
 "m{letter}, '{letter} - sets mark at cursor, returns to mark
+"
+"<C-g> and <C-t> move between searches before enter is hit
