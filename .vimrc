@@ -112,4 +112,3 @@ set nomodeline
 "m{letter}, '{letter} - sets mark at cursor, returns to mark
 "
 "<C-g> and <C-t> move between searches before enter is hit
-"adding line to test soft links

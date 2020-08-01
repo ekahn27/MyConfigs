@@ -10,11 +10,12 @@ always be in dark-mode
 There are also some other generic files such as .bashrc and .profile that
 contain edits/aliases at the end.
 
-When on a new machine, I normally clone this repo and create a hardlink
-between these files and files in the home directory with the same name so
-that...
+When on a new machine, I normally clone this repo and create a softlink to these
+files in my home directory so that...
 1. Files like .vimrc, .bashrc, .profile are actually used (they need to be in
 the home directory)
 2. Any changes made to a configuration file automatically happens in the home
 directory and this local repo. This means I only need to make an edit once 
 and I'm ready to commit/push and the new settings are in place on the machine.
+3. I use softlinks instead of hardlinks because hardlinks are not preserved with
+git.
