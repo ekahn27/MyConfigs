@@ -117,5 +117,5 @@ if ! shopt -oq posix; then
 fi
 
 alias ls="ls -h --color=auto"
-alias cls="clear; ls -o"
-alias cla="clear; ls -oa"
+alias cls="clear; ls -l"
+alias cla="clear; ls -la"
