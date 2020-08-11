@@ -69,8 +69,8 @@ set hlsearch        "highlight matches
 set noswapfile		"no additional swapfiles
 set colorcolumn=80  "highlight column 80 for long lines
 
+set background=dark
 colorscheme gruvbox
-"set background=dark
 "set term=xterm-256color
 set t_ut=
 
@@ -112,3 +112,5 @@ set nomodeline
 "m{letter}, '{letter} - sets mark at cursor, returns to mark
 "
 "<C-g> and <C-t> move between searches before enter is hit
+"
+"<C-t> and <C-d> indent and outdent in insert mode

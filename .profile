@@ -31,5 +31,6 @@ alias py="python3"
 alias pip="pip3"
 alias py2="python2"
 alias explorer="explorer.exe ."
+alias grep="grep -n"
 Wind='/mnt/c/Users/edk11'
 figlet Welcome Eric!
