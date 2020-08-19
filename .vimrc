@@ -1,4 +1,3 @@
-set nocompatible	"Use vim settings instead of vi
 "Easy escape to normal mode
 imap jj <esc>
 
