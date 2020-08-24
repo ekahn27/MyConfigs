@@ -94,6 +94,8 @@ set ttyfast
 "simply to stop security flaw
 set nomodeline
 
+"makes <leader>c copy text under cursor to command or search
+cnoremap <leader>c <C-r><C-w>
 "Helpful tips
 "gq <motion> to wrap text
 "use <%> to jump to matching paren
@@ -113,3 +115,11 @@ set nomodeline
 "<C-g> and <C-t> move between searches before enter is hit
 "
 "<C-t> and <C-d> indent and outdent in insert mode
+"
+"i_CTRL-x i_CTRL-l does line completion
+"i_CTRL-x i_CTRL-n completes keywords in current file
+"CTRL-x in normal decrements numbers
+"
+"gv re-highlights in visual mode
+"
+"c_CTRL-r c_CTRL-w pulls word under cursor to command/search
