@@ -119,7 +119,6 @@ cnoremap <leader>c <C-r><C-w>
 "i_CTRL-x i_CTRL-l does line completion
 "i_CTRL-x i_CTRL-n completes keywords in current file
 "CTRL-x in normal decrements numbers
-"
-"gv re-highlights in visual mode
+"CTRL-a in normal increments numbers
 "
 "c_CTRL-r c_CTRL-w pulls word under cursor to command/search
