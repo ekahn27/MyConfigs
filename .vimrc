@@ -1,7 +1,7 @@
 "Easy escape to normal mode
 imap jj <esc>
 
-let mapleader="'"
+let mapleader=","
 function! Ap(isOn)
 	if(a:isOn == 1)
 		inoremap ( ()<esc>i
@@ -87,6 +87,11 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
+
+tmap <C-j> <C-w>j
+tmap <C-k> <C-w>k
+tmap <C-h> <C-w>h
+tmap <C-l> <C-w>l
 
 set pastetoggle=<F2>
 set ttyfast
