@@ -56,7 +56,7 @@ set softtabstop=4   "num spaces in tab when editing
 set shiftwidth=4    "make tab 4 spaces
 set noexpandtab		"don't use spaces for tabs
 "configure tabs for various files
-au BufReadPost,BufNewFile *.py setlocal expandtab "use spaces when tab is hit
+au BufReadPost,BufNewFile *.py,*.md setlocal expandtab "use spaces when tab is hit
 au BufReadPost,BufNewFile *.c,*.h setlocal cindent
 
 set ruler			"always show cursor
@@ -92,6 +92,7 @@ tmap <C-j> <C-w>j
 tmap <C-k> <C-w>k
 tmap <C-h> <C-w>h
 tmap <C-l> <C-w>l
+tmap jj <C-w>N
 
 set pastetoggle=<F2>
 set ttyfast
