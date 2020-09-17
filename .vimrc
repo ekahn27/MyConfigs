@@ -59,7 +59,7 @@ set shiftwidth=4    "how many spaces to shift with >> or <<
 set smarttab	    "<Tab> in front of a line inserts blanks according to 'shiftwidth'
 set noexpandtab	    "don't use spaces for tabs
 "configure tabs for various files
-au BufReadPost,BufNewFile *.py,*.md setlocal expandtab "use spaces when tab is hit
+au BufReadPost,BufNewFile *.py,*.md set expandtab "use spaces when tab is hit
 
 set ruler	    "always show cursor
 set scrolloff=5     "start scrolling before hitting top/bottom
@@ -103,6 +103,10 @@ set nomodeline
 
 "makes <leader>c copy text under cursor to command or search
 cnoremap <leader>c <C-r><C-w>
+
+"In normal and visual mode, put 'delete' command to black hole register
+nnoremap dd "_dd
+vnoremap d "_d
 "Helpful tips
 "gq <motion> to wrap text
 "use <%> to jump to matching paren
