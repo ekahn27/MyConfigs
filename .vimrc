@@ -21,7 +21,9 @@ call Ap(1)
 inoremap /* <esc>:set backspace=indent,start<CR>i/*<CR><BS>*/<esc>:set backspace=indent,eol,start<CR>O<BS>
 
 "move over one space (move outside parens)
-inoremap <leader>a <esc>la
+"inoremap <leader>a <esc>la
+"try this out instead of line above. C-O is insert-normal mode
+inoremap <leader>a <C-O>a
 syntax on			"enables syntax highlighting
 set cursorline		"Shows current line cursor is on
 nnoremap j gj
@@ -45,7 +47,6 @@ set showmode        "show mode currently editing in
 set title			"show filename in window title bar
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-set textwidth=80	"Can use w/ gq to wrap text really nicely
 
 "indentation
 filetype indent on
@@ -104,7 +105,6 @@ set nomodeline
 "makes <leader>c copy text under cursor to command or search
 cnoremap <leader>c <C-r><C-w>
 
-"In normal and visual mode, put 'delete' command to black hole register
 nnoremap dd "_dd
 vnoremap d "_d
 "Helpful tips
@@ -133,3 +133,6 @@ vnoremap d "_d
 "CTRL-a in normal increments numbers
 "
 "c_CTRL-r c_CTRL-w pulls word under cursor to command/search
+"
+"i_CTRL-O puts you in insert-normal mode. This allows you to do one command and
+"then returns you to insert mode
