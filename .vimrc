@@ -60,7 +60,8 @@ set shiftwidth=4    "how many spaces to shift with >> or <<
 set smarttab	    "<Tab> in front of a line inserts blanks according to 'shiftwidth'
 set noexpandtab	    "don't use spaces for tabs
 "configure tabs for various files
-au BufReadPost,BufNewFile *.py,*.md set expandtab "use spaces when tab is hit
+au BufReadPost,BufNewFile *.py,*.md,*.hny set expandtab "use spaces when tab is hit
+au BufReadPost,BufNewFile *.hny set autoindent "set autoindent for harmony files
 
 set ruler	    "always show cursor
 set scrolloff=5     "start scrolling before hitting top/bottom
@@ -136,3 +137,5 @@ vnoremap d "_d
 "
 "i_CTRL-O puts you in insert-normal mode. This allows you to do one command and
 "then returns you to insert mode
+"
+"use H, M, L to go to high, middle or low of window

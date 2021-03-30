@@ -119,3 +119,4 @@ fi
 alias ls="ls --color=auto"
 alias cls="clear; ls -lh"
 alias cla="clear; ls -lhA"
+PATH=$PATH:$HOME/"harmony-1.1"
